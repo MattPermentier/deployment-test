@@ -59,7 +59,8 @@ jobs:
 
       - name: Install composer dependencies
         run: |
-          composer install --no-scripts
+#          composer install --no-scripts
+          npm install
 
       - name: Prepare Laravel Application
         run: |
