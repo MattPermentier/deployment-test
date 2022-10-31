@@ -33,5 +33,7 @@ jobs:
           DB_CONNECTION: mysql
           DB_DATABASE: database/database.mysql
         run: vendor/bin/phpunit
+        - name: Perform phpmd script
+          run: ./vendor/bin/phpmd app/ github phpmdrules.xml
 
 
